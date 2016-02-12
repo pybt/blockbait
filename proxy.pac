@@ -13,6 +13,7 @@ var FindProxyForURL = function(init, profiles) {
         "use strict";
         if (/(?:^|\.)lnwshop\.com$/.test(host)) return "DIRECT";
         if (/(?:^|\.)lnwmarket\.com$/.test(host)) return "DIRECT";
+        if (/(?:^|\.)lnwmall\.com$/.test(host)) return "DIRECT";
         if (/(?:^|\.)renaicatering\.com$/.test(host)) return "DIRECT";
         if (/(?:^|\.)o-step\.com$/.test(host)) return "DIRECT";
         if (/^118\.175\.28\.44$/.test(host)) return "DIRECT";
