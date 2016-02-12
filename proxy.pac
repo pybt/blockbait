@@ -11,6 +11,10 @@ var FindProxyForURL = function(init, profiles) {
 }("+auto switch", {
     "+auto switch": function(url, host, scheme) {
         "use strict";
+        if (/(?:^|\.)renaicatering\.com$/.test(host)) return "DIRECT";
+        if (/(?:^|\.)o-step\.com$/.test(host)) return "DIRECT";
+        if (/^118\.175\.28\.44$/.test(host)) return "DIRECT";
+        if (/^192\..*\..*\./.test(host)) return "DIRECT";
         if (/(?:^|\.)lnwstat\.com$/.test(host)) return "DIRECT";
         if (/(?:^|\.)lnwfile\.com$/.test(host)) return "DIRECT";
         if (/(?:^|\.)aukeythailand\.com$/.test(host)) return "DIRECT";
